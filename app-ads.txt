@@ -1,0 +1,17 @@
+# app-ads.txt for every game published by Boundless Team.
+#
+# One file, one AdMob account, all games. Each game's Play listing points at
+# https://games.boundlessfiction.com/ as its developer website, so the ad networks all crawl
+# this one file. Do NOT put copies of it in /games/<game>/ — crawlers only ever look at the
+# root of the developer website domain.
+#
+# Replace pub-YOUR-ADMOB-PUBLISHER-ID below with the publisher ID from
+# AdMob -> Settings -> Account information. It looks like pub-1234567890123456.
+# Keep the rest of the line exactly as it is: f08c47fec0942fa0 is Google's certification
+# authority ID and is the same for everyone.
+#
+# After uploading, check it at https://games.boundlessfiction.com/app-ads.txt and then wait:
+# AdMob re-crawls every 24 hours or so, and the "app-ads.txt not found" warning in the AdMob
+# console can take a few days to clear.
+
+google.com, pub-YOUR-ADMOB-PUBLISHER-ID, DIRECT, f08c47fec0942fa0

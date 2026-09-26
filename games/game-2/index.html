@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+  TEMPLATE PAGE. Copy this whole folder to add a game:
+
+      games/game-2/  ->  games/your-game/
+
+  Then work top to bottom replacing every [Placeholder]. Nothing else on the site needs to
+  change except one card on the front page (index.html, the list under "Published games").
+
+  Placeholders used here:
+    [Game Name]         the title, in the <title>, the <h1> and the metadata
+    [Game Description]  one or two plain sentences
+    [Google Play URL]   the listing URL, once the game is published
+    [Genre]             Narrative, Puzzle, Arcade...
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Game Name] — Boundless Team</title>
+<meta name="description" content="[Game Description] An Android game from Boundless Team.">
+<link rel="canonical" href="https://games.boundlessfiction.com/games/game-2/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Boundless Team">
+<meta property="og:title" content="[Game Name] — Boundless Team">
+<meta property="og:description" content="[Game Description]">
+<meta property="og:url" content="https://games.boundlessfiction.com/games/game-2/">
+<meta property="og:image" content="https://games.boundlessfiction.com/assets/img/site/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/site/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "[Game Name]",
+  "url": "https://games.boundlessfiction.com/games/game-2/",
+  "image": "https://games.boundlessfiction.com/assets/img/site/icon-512.png",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Android",
+  "author": { "@type": "Organization", "name": "Boundless Team" },
+  "publisher": { "@type": "Organization", "name": "Boundless Team" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/assets/img/site/icon-512.png" alt="" width="28" height="28">
+      Boundless Team
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/#games">Games</a>
+      <a href="/#contact">Contact</a>
+      <a href="/privacy-policy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap game-head">
+      <!-- Put the icon in /assets/img/<game-folder>/icon-256.png and point this at it. -->
+      <img class="icon" src="/assets/img/site/icon-512.png" alt="[Game Name] app icon" width="112" height="112">
+      <div class="intro">
+        <p class="eyebrow">Android &middot; [Genre]</p>
+        <h1>[Game Name]</h1>
+        <p class="lede">[Game Description]</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="[Google Play URL]" aria-disabled="true">Get it on Google Play</a>
+          <a class="btn" href="mailto:bsoumik103@gmail.com">Contact support</a>
+        </div>
+        <p class="muted" style="margin-top:0.9rem">In development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Screenshots</h2>
+      <!-- Drop 4-6 screenshots in /assets/img/<game-folder>/ and list them here. Keep the
+           width and height attributes accurate so the page does not jump while they load,
+           and write a real alt description for each one. -->
+      <div class="shots" role="group" aria-label="Screenshots from [Game Name]">
+        <img src="/assets/img/site/og.jpg" alt="[Describe what this screenshot shows]" width="412" height="915" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>What it is</h2>
+      <div class="prose">
+        <p>[A paragraph about the game: what you do in it, and what it feels like.]</p>
+      </div>
+
+      <ul class="features">
+        <li><strong>[Feature]</strong><span>[One sentence about it.]</span></li>
+        <li><strong>[Feature]</strong><span>[One sentence about it.]</span></li>
+        <li><strong>[Feature]</strong><span>[One sentence about it.]</span></li>
+        <li><strong>[Feature]</strong><span>[One sentence about it.]</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap prose">
+      <h2>Ads and purchases</h2>
+      <p>[Say plainly whether the game has ads, and whether it has purchases. If it has
+        neither, say that instead — it is worth saying.]</p>
+      <p class="muted">
+        What is collected, and by whom, is set out in the
+        <a href="/privacy-policy/">privacy policy</a>. The rules you agree to when you play are
+        in the <a href="/terms/">terms of use</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap prose">
+      <h2>Developer</h2>
+      <p>
+        [Game Name] is made and published by <a href="/">Boundless Team</a>, an independent
+        studio. Support and bug reports:
+        <a href="mailto:bsoumik103@gmail.com">bsoumik103@gmail.com</a>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Boundless Team. All rights reserved.</p>
+    <nav aria-label="Legal">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="mailto:bsoumik103@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
