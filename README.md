@@ -42,13 +42,10 @@ games-site/
 
 Search the repository for `[` and fill in what is left. As it stands:
 
-- **`app-ads.txt`** — replace `pub-YOUR-ADMOB-PUBLISHER-ID` with the real publisher ID from
-  AdMob → Settings → Account information. Nothing else in the file changes.
 - **`games/selfbound/index.html`** — replace `[Google Play URL]` once the listing exists, and
   remove the `aria-disabled="true"` and the "Coming to Google Play" line.
-- **`privacy-policy/index.html`** — the company-details paragraph under *Who we are*, only if
-  you trade as a registered company.
-- **`terms/index.html`** — *Governing law*: the country whose law applies.
+
+`app-ads.txt` is already complete, with the real publisher ID in it.
 - **`games/game-2/`** — leave it alone. It is the template, and every `[Placeholder]` in it is
   meant to stay until it is copied.
 
