@@ -54,6 +54,9 @@ across the repository — it appears in the pages, the footers and the JSON-LD.
 
 ---
 
+Repository access, credentials and how the site gets deployed:
+[docs/ACCESS-AND-DEPLOY.md](docs/ACCESS-AND-DEPLOY.md).
+
 ## Working on it
 
 ### Clone
