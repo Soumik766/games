@@ -44,15 +44,10 @@ To see what is stored, change it, or remove it:
   ```
   `fill` prints the token in clear text, so do not run it while sharing a screen.
 
-A plain-text copy of the token for this repository is kept **outside every repository**, at:
-
-```text
-C:\Users\jbisw\.secrets\github-games-token.txt
-```
-
-That folder is not tracked by Git and nothing in it is ever committed. It exists only so the
-token can be recovered if Credential Manager is lost with a reinstall. Delete it if you would
-rather rely on GitHub alone — a new token takes a minute to generate.
+A backup copy of the token is kept on the development machine, outside every repository and
+outside anything Git tracks, so it can be recovered if Credential Manager is lost in a
+reinstall. A password manager is a better home for it, and generating a fresh token takes a
+minute either way.
 
 ### Replacing the token
 
@@ -66,7 +61,7 @@ be replaced.
    ```bash
    printf "protocol=https\nhost=github.com\nusername=x-access-token\npassword=NEW_TOKEN\n\n" | git credential approve
    ```
-4. Update `C:\Users\jbisw\.secrets\github-games-token.txt` if you keep that copy.
+4. Update the backup copy on your machine, if you keep one.
 
 ---
 
