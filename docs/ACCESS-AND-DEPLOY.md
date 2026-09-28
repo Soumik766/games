@@ -86,9 +86,20 @@ before any of it resolves.
 1. **hPanel → Domains → Subdomains** — create `games` under `boundlessfiction.com`. Note the
    document root path it reports; everything below depends on it.
 2. **hPanel → Advanced → Git** — *Connect with GitHub*, authorise, choose `Soumik766/games`,
-   branch `main`, and set the deploy directory to that document root. The directory must be
-   **empty** for the first deployment, and it must be the subdomain's root rather than
-   `public_html`, or the files land on the main site.
+   branch `main`, and set the deploy directory to **the subdomain's own `public_html`**.
+
+   Two ways this goes wrong, both of which cost an afternoon:
+
+   - **The wrong `public_html`.** The main site `boundlessfiction.com` has one too, and it
+     holds the manga site. Hostinger's Git deploy *replaces* files in its target, so deploying
+     there would drop this site's `index.html` on top of that homepage. Check the path with
+     *Change* on the Git page and make it match what **Domains → Subdomains** reports.
+   - **A directory that is not empty.** The first deployment refuses unless the target is
+     empty, and Hostinger leaves a "Default page" placeholder in every new subdomain folder.
+     Delete it first, including any hidden `index.php` or `default.php`.
+
+   The first deployment has to be started by hand with the **Deploy** button. Pushing to
+   `main` only deploys automatically once that first run has succeeded.
 3. **hPanel → Security → SSL** — issue a certificate **for the subdomain**. A certificate
    covering `boundlessfiction.com` does not automatically cover `games.boundlessfiction.com`.
    Then turn on Force HTTPS.
