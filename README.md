@@ -54,8 +54,12 @@ across the repository — it appears in the pages, the footers and the JSON-LD.
 
 ---
 
-Repository access, credentials and how the site gets deployed:
-[docs/ACCESS-AND-DEPLOY.md](docs/ACCESS-AND-DEPLOY.md).
+Two documents worth reading before touching anything:
+
+- [docs/NEW-GAME-SETUP.md](docs/NEW-GAME-SETUP.md) — the playbook for adding a game, from this
+  site through Play Console and AdMob.
+- [docs/ACCESS-AND-DEPLOY.md](docs/ACCESS-AND-DEPLOY.md) — repository access, credentials, and
+  how the site reaches the web.
 
 ## Working on it
 
