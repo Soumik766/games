@@ -1,0 +1,14 @@
+# games.boundlessfiction.com — read by Hostinger's web server (LiteSpeed).
+#
+# This repository also holds documentation for the people who work on the site: README.md,
+# games/README.md and docs/. Hostinger deploys the whole repository, so without these rules
+# those files would be downloadable from the website itself. They answer 404, as if they were
+# never there. The website is the HTML, CSS, images and the root text files; nothing else.
+
+# Internal documentation.
+RedirectMatch 404 ^/docs(/.*)?$
+RedirectMatch 404 (?i)\.md$
+
+# Dotfiles and dot-directories (.git, .editorconfig, ...), except /.well-known/, which
+# certificate renewal needs. Blocking that would quietly stop HTTPS renewing.
+RedirectMatch 404 ^/\.(?!well-known/)
