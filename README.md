@@ -35,6 +35,7 @@ games-site/
 | `https://games.boundlessfiction.com/privacy-policy/` | `privacy-policy/index.html` |
 | `https://games.boundlessfiction.com/terms/` | `terms/index.html` |
 | `https://games.boundlessfiction.com/games/selfbound/` | `games/selfbound/index.html` |
+| `https://games.boundlessfiction.com/games/reel-counter/` | `games/reel-counter/index.html` |
 
 ---
 
@@ -44,6 +45,10 @@ Search the repository for `[` and fill in what is left. As it stands:
 
 - **`games/selfbound/index.html`** — replace `[Google Play URL]` once the listing exists, and
   remove the `aria-disabled="true"` and the "Coming to Google Play" line.
+
+- **`games/reel-counter/index.html`** — the same: replace `[Google Play URL]` with
+  `https://play.google.com/store/apps/details?id=app.reelcounter.tracker` once the listing
+  exists, remove `aria-disabled="true"` and the "Coming to Google Play" line.
 
 `app-ads.txt` is already complete, with the real publisher ID in it.
 - **`games/game-2/`** — leave it alone. It is the template, and every `[Placeholder]` in it is
