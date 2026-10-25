@@ -57,7 +57,7 @@ Search the repository for `[` and fill in what is left. As it stands:
   exists, remove `aria-disabled="true"` and the "Coming to Google Play" line.
 
 - **`games/sense-of-time/index.html`** — the same: replace `[Google Play URL]` with
-  `https://play.google.com/store/apps/details?id=com.senseoftime.game` once the listing
+  `https://play.google.com/store/apps/details?id=com.senseoftime.timinggame` once the listing
   exists, remove `aria-disabled="true"` and the "Coming to Google Play" line.
 
 `app-ads.txt` is already complete, with the real publisher ID in it.
