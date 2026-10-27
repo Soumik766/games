@@ -38,6 +38,7 @@ games-site/
 | `https://games.boundlessfiction.com/games/reel-counter/` | `games/reel-counter/index.html` |
 | `https://games.boundlessfiction.com/games/snakebait/` | `games/snakebait/index.html` |
 | `https://games.boundlessfiction.com/games/sense-of-time/` | `games/sense-of-time/index.html` |
+| `https://games.boundlessfiction.com/games/train-the-ant/` | `games/train-the-ant/index.html` |
 
 ---
 
@@ -58,6 +59,10 @@ Search the repository for `[` and fill in what is left. As it stands:
 
 - **`games/sense-of-time/index.html`** — the same: replace `[Google Play URL]` with
   `https://play.google.com/store/apps/details?id=com.senseoftime.timinggame` once the listing
+  exists, remove `aria-disabled="true"` and the "Coming to Google Play" line.
+
+- **`games/train-the-ant/index.html`** — the same: replace `[Google Play URL]` with
+  `https://play.google.com/store/apps/details?id=com.traintheant.game` once the listing
   exists, remove `aria-disabled="true"` and the "Coming to Google Play" line.
 
 `app-ads.txt` is already complete, with the real publisher ID in it.
