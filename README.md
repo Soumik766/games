@@ -39,7 +39,7 @@ games-site/
 | `https://games.boundlessfiction.com/games/snakebait/` | `games/snakebait/index.html` |
 | `https://games.boundlessfiction.com/games/sense-of-time/` | `games/sense-of-time/index.html` |
 | `https://games.boundlessfiction.com/games/train-the-ant/` | `games/train-the-ant/index.html` |
-| `https://games.boundlessfiction.com/games/arise-shadow-legion/` | `games/arise-shadow-legion/index.html` |
+| `https://games.boundlessfiction.com/games/arise-dungeonborn/` | `games/arise-dungeonborn/index.html` |
 
 ---
 
@@ -66,8 +66,8 @@ Search the repository for `[` and fill in what is left. As it stands:
   `https://play.google.com/store/apps/details?id=com.traintheant.game` once the listing
   exists, remove `aria-disabled="true"` and the "Coming to Google Play" line.
 
-- **`games/arise-shadow-legion/index.html`** — the same: replace `[Google Play URL]` with
-  `https://play.google.com/store/apps/details?id=com.ariseshadowlegion.game` once the listing
+- **`games/arise-dungeonborn/index.html`** — the same: replace `[Google Play URL]` with
+  `https://play.google.com/store/apps/details?id=com.arisedungeonborn.game` once the listing
   exists, remove `aria-disabled="true"` and the "Coming to Google Play" line.
 
 `app-ads.txt` is already complete, with the real publisher ID in it.
